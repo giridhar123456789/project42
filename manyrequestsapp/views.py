@@ -18,3 +18,38 @@ def add(request):
         y=int(request.POST["t2"])
         z=x+y
         return HttpResponse("The sum is: "+str(z))
+def sub(request):
+    if request.method=="GET":
+        a=int(request.GET["t3"])
+        b=int(request.GET["t4"])
+        c=a-b
+        return HttpResponse("The sub is: "+str(c))
+    else:
+        e=int(request.GET["t3"])
+        f=int(request.GET["t4"])
+        g=e-f
+        return HttpResponse("The sub is: "+str(g))
+def mul(request):
+    if request.method=="GET":
+        h=int(request.GET["t5"])
+        i=int(request.GET["t6"])
+        j=h*i
+        return HttpResponse("The mul is: "+str(j))
+    else:
+        m=int(request.GET["t5"])
+        n=int(request.GET["t6"])
+        o=m*n
+        return HttpResponse("The mul is: "+str(o))
+def div(request):
+    if request.method=="GET":
+        x=int(request.GET["t7"])
+        y=int(request.GET["t8"])
+        z=x/y
+        return HttpResponse("The div is: "+str(z))
+    else:
+        t=int(request.GET["t9"])
+        u=int(request.GET["t10"])
+        l=t/u
+        return HttpResponse("The div is: "+str(l))
+
+

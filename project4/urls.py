@@ -23,4 +23,7 @@ urlpatterns = [
     path('getinput',views.getinput),
     path('postinput',views.postinput),
     path('add',views.add),
+    path('sub',views.sub),
+    path('mul',views.mul),
+    path('div',views.div),
 ]
